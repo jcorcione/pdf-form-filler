@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Fill in the Missing Fields</h2>
+    <form action="/fill" method="post">
+        <input type="hidden" name="filepath" value="{{ filepath }}">
+        <label>Sample Field</label>
+        <input type="text" name="sample" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
