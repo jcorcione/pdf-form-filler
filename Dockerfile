@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN pip install flask
+RUN pip install flask python-docx openpyxl PyMuPDF
 
 # Expose Flask port
 EXPOSE 5000

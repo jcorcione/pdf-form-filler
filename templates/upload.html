@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Upload Your Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        h2 { color: #333; }
+        form { background: #f9f9f9; padding: 20px; border-radius: 8px; display: inline-block; }
+        input[type="file"] { margin: 10px 0; }
+        button { background-color: #28a745; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
 <body>
     <h2>Upload Your Form</h2>
+    <p>Select a DOCX, XLSX, or PDF file to extract and process:</p>
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="file" required>
+        <br><br>
         <button type="submit">Upload</button>
     </form>
 </body>
